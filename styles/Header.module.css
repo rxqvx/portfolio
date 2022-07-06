@@ -1,0 +1,31 @@
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: red;
+  padding: 1em;
+  width: 100vw;
+  /* glassmorphism */
+  background: rgba(250, 241, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(27, 27, 27, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.ul {
+  display: flex;
+}
+
+.li {
+  letter-spacing: 3px;
+  margin-left: 50px;
+  color: #fff;
+  list-style: none;
+  cursor: pointer;
+}
+
+.logo {
+  cursor: pointer;
+}
