@@ -1,32 +1,35 @@
-.divHome {
+/* .divHome {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.card {
+/* .card {
   margin-top: 15em;
   margin-right: 50em;
   width: 30em;
   height: 35em;
 
   background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(28, 8, 34, 0.37);
   backdrop-filter: blur(6.5px);
   -webkit-backdrop-filter: blur(6.5px);
+
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-}
 
-.euImage {
+} */
+
+/* .euImage {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-}
+} */
 
-.textCard {
-  margin: 1em;
+/* .textCard {
   display: flex;
+
+  margin: 1em;
   align-items: flex-start;
   justify-content: center;
   color: #fff;
@@ -38,4 +41,4 @@
 .textCard strong {
   margin-left: 4px;
   margin-top: 2px;
-}
+} */

@@ -1,5 +1,7 @@
+import { Flex } from "@chakra-ui/react";
+
 const Footer = () => {
-  return <div>Enter</div>;
+  return <Flex>Enter</Flex>;
 };
 
 export default Footer;

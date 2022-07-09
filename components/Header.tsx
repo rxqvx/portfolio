@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/Header.module.css";
-import Image from "next/image";
+import { Image } from "@chakra-ui/react";
 
 const Header = () => {
   return (
@@ -12,6 +12,7 @@ const Header = () => {
           width="110px"
           height="110px"
           alt="logo"
+          _hover={{ transform: "scale(1.1)" }}
         />
       </Link>
       <ul className={styles.ul}>
