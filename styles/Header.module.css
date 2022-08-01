@@ -12,13 +12,15 @@
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.18);
+
+  z-index: 999;
 }
 
-.ul {
+/* .ul {
   display: flex;
-}
+} */
 
-.li {
+/* .li {
   letter-spacing: 3px;
   margin-left: 50px;
   color: #fff;
@@ -37,9 +39,9 @@
   background-position-x: right;
 
   transition: background-size 300ms;
-}
+} */
 
-.li:hover {
+/* .li:hover {
   font-weight: bold;
   background-size: 100% 100%;
   background-position-x: left;
@@ -47,4 +49,4 @@
 
 .logo {
   cursor: pointer;
-}
+} */
