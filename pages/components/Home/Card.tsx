@@ -1,5 +1,4 @@
-import { Flex, Box, Text } from "@chakra-ui/react";
-import Image from "next/image";
+import { Flex, Image } from "@chakra-ui/react";
 
 import { AnimatedText } from "../../../styles/styled";
 
