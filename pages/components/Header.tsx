@@ -29,18 +29,16 @@ const Header = () => {
             backgroundImage="linear-gradient(transparent 0%,transparent 90%,hotpink 90%,hotpink 100%)"
             backgroundRepeat="no-repeat"
             backgroundSize="0% 100%"
-            backgroundPositionX="right"
             transition="background-size 300ms"
             _hover={{
               fontWeight: "bold",
               backgroundSize: "100% 100%",
-              backgroundPositionX: "left",
             }}
           >
             Início
           </ListItem>
         </Link>
-        <Link href="/">
+        <Link href="#about">
           <ListItem
             letterSpacing="3px"
             marginLeft="50px"
@@ -49,18 +47,16 @@ const Header = () => {
             backgroundImage="linear-gradient(transparent 0%,transparent 90%,hotpink 90%,hotpink 100%)"
             backgroundRepeat="no-repeat"
             backgroundSize="0% 100%"
-            backgroundPositionX="right"
             transition="background-size 300ms"
             _hover={{
               fontWeight: "bold",
               backgroundSize: "100% 100%",
-              backgroundPositionX: "left",
             }}
           >
             Sobre mim
           </ListItem>
         </Link>
-        <Link href="/">
+        <Link href="#projects">
           <ListItem
             letterSpacing="3px"
             marginLeft="50px"
@@ -69,18 +65,16 @@ const Header = () => {
             backgroundImage="linear-gradient(transparent 0%,transparent 90%,hotpink 90%,hotpink 100%)"
             backgroundRepeat="no-repeat"
             backgroundSize="0% 100%"
-            backgroundPositionX="right"
             transition="background-size 300ms"
             _hover={{
               fontWeight: "bold",
               backgroundSize: "100% 100%",
-              backgroundPositionX: "left",
             }}
           >
             Projetos
           </ListItem>
         </Link>
-        <Link href="/">
+        <Link href="#habilities">
           <ListItem
             letterSpacing="3px"
             marginLeft="50px"
@@ -89,15 +83,31 @@ const Header = () => {
             backgroundImage="linear-gradient(transparent 0%,transparent 90%,hotpink 90%,hotpink 100%)"
             backgroundRepeat="no-repeat"
             backgroundSize="0% 100%"
-            backgroundPositionX="right"
             transition="background-size 300ms"
             _hover={{
               fontWeight: "bold",
               backgroundSize: "100% 100%",
-              backgroundPositionX: "left",
             }}
           >
             Habilidades
+          </ListItem>
+        </Link>
+        <Link href="#contact">
+          <ListItem
+            letterSpacing="3px"
+            marginLeft="50px"
+            color="#fff"
+            cursor="pointer"
+            backgroundImage="linear-gradient(transparent 0%,transparent 90%,hotpink 90%,hotpink 100%)"
+            backgroundRepeat="no-repeat"
+            backgroundSize="0% 100%"
+            transition="background-size 300ms"
+            _hover={{
+              fontWeight: "bold",
+              backgroundSize: "100% 100%",
+            }}
+          >
+            Contato
           </ListItem>
         </Link>
       </List>

@@ -22,8 +22,8 @@ export const AnimatedText = styled.h4`
   h1 {
     display: flex;
     justify-content: center;
-    align-self: center;
-    font-size: 2em;
+    align-self: flex-start;
+    font-size: 2.8em;
     font-weight: bold;
 
     background-image: linear-gradient(
