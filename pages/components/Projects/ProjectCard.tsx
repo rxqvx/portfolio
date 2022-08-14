@@ -16,11 +16,9 @@ export default function ProjectCard({ data }) {
       api
         .get(`https://api.github.com/repos/${user}/${data.name}/languages`)
         .then(({ data }) => {
-          console.log("bateu aqui");
           const lang = Object.keys(data);
           setLanguages(lang);
         });
-      console.log("new Languages: ", languages);
     } catch {
       console.error("error on loadLanguages");
     }
@@ -33,9 +31,8 @@ export default function ProjectCard({ data }) {
   }, []);
 
   const renderDate = (createdDate) => {
-    console.log(createdDate);
     const date = parse(createdDate, "yyyy-MM-dd'T'HH:mm:ss'Z'", new Date());
-    const result = format(date, "MM/dd/yyyy");
+    const result = format(date, "dd/MM/yyyy");
     return result;
   };
 
@@ -75,7 +72,7 @@ export default function ProjectCard({ data }) {
   const renderBadge = (language) => {
     return (
       <Badge
-        key={(item, index) => String(index)}
+        key={language}
         borderRadius="full"
         px="2"
         colorScheme="purple"
@@ -91,6 +88,7 @@ export default function ProjectCard({ data }) {
     <>
       <Box
         maxW="20em"
+        height="38em"
         borderWidth="2px"
         borderRadius="lg"
         overflow="hidden"
