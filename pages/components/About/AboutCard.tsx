@@ -1,6 +1,15 @@
-import { Flex, Image } from "@chakra-ui/react";
+import React from "react";
+import { Flex, Image, Text } from "@chakra-ui/react";
 import { TextH1 } from "../../../styles/styled";
+import { LuminousText } from "./styles";
+
 const AboutCard = () => {
+  const [eggVisible, setEggVisible] = React.useState(false);
+
+  const handleClick = () => {
+    setEggVisible((prevState) => !prevState);
+  };
+
   return (
     <Flex
       flexDir="column"
@@ -23,7 +32,9 @@ const AboutCard = () => {
         alt="logo"
         margin="2em"
         _hover={{ transform: "scale(0.9)" }}
+        onClick={() => handleClick()}
       />
+      {eggVisible && <LuminousText>Você encontrou um easter egg!</LuminousText>}
       <TextH1>Sobre mim</TextH1>
     </Flex>
   );

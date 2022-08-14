@@ -20,6 +20,53 @@ const HomeSec = () => {
     );
   };
 
+  const buttonItems = [
+    {
+      id: 1,
+      name: "Linkedin",
+      colorScheme: "linkedin",
+      leftIcon: <Icon as={AiFillLinkedin} />,
+      hover: { color: "#0A66C2", backgroundColor: "#fff" },
+      link: "https://www.linkedin.com/in/henrique-kenji-808113202/",
+    },
+    {
+      id: 2,
+      name: "Github",
+      colorScheme: "gray",
+      leftIcon: <Icon as={AiFillGithub} />,
+      hover: { color: "#fff", backgroundColor: "#000" },
+      link: "https://github.com/rxqvx",
+    },
+    {
+      id: 3,
+      name: "Email",
+      colorScheme: "teal",
+      leftIcon: <EmailIcon />,
+      hover: { color: "teal", backgroundColor: "#fff" },
+      link: "#contact",
+    },
+    {
+      id: 4,
+      name: "Currículo",
+      colorScheme: "red",
+      leftIcon: <Icon as={AiFillFilePdf} />,
+      hover: { color: "#e33d33", backgroundColor: "#fff" },
+      link: "/CurriculumVitae",
+    },
+  ];
+
+  const handlePress = (link) => {
+    function scrollTo(hash) {
+      location.hash = "#" + hash;
+    }
+    if (link === "#contact") {
+      scrollTo("contact");
+      return;
+    }
+
+    window.open(link, "_blank");
+  };
+
   return (
     <>
       <Flex
@@ -46,41 +93,19 @@ const HomeSec = () => {
             </span>
             <span>Desenvolvedor Front-End</span>
           </AnimatedText>
-
           <Flex flexDirection="row" gap={5}>
-            {/* criar um array com as props hover icon e colorscheme etc para fazer um .map */}
-            <Button
-              _hover={{ color: "#0A66C2", backgroundColor: "#fff" }}
-              leftIcon={<Icon as={AiFillLinkedin} />}
-              colorScheme="linkedin"
-              variant="solid"
-            >
-              Linkedin
-            </Button>
-            <Button
-              leftIcon={<Icon as={AiFillGithub} />}
-              colorScheme="gray"
-              variant="solid"
-              _hover={{ color: "#fff", backgroundColor: "#000" }}
-            >
-              Github
-            </Button>
-            <Button
-              _hover={{ color: "teal", backgroundColor: "#fff" }}
-              leftIcon={<EmailIcon />}
-              colorScheme="teal"
-              variant="solid"
-            >
-              Email
-            </Button>
-            <Button
-              leftIcon={<Icon as={AiFillFilePdf} />}
-              colorScheme="red"
-              variant="solid"
-              _hover={{ color: "#e33d33", backgroundColor: "#fff" }}
-            >
-              Currículo
-            </Button>
+            {buttonItems.map((buttonItem) => (
+              <Button
+                key={buttonItem.id}
+                _hover={buttonItem.hover}
+                leftIcon={buttonItem.leftIcon}
+                colorScheme={buttonItem.colorScheme}
+                variant="solid"
+                onClick={() => handlePress(buttonItem.link)}
+              >
+                {buttonItem.name}
+              </Button>
+            ))}
           </Flex>
         </Flex>
         <Flex alignItems="center" justifyContent="center" zIndex="25">

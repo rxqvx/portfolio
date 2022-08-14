@@ -15,7 +15,6 @@ export default function ProjectsSection() {
       api.get(`https://api.github.com/users/${user}/repos`).then(({ data }) => {
         setRepos(data);
       });
-      console.log("newrepo: ", await repos);
     } catch {
       console.error("error on loadPayload");
     }
