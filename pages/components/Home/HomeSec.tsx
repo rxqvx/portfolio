@@ -91,7 +91,9 @@ const HomeSec = () => {
             <span>
               Olá, meu nome é <h1>Henrique</h1>
             </span>
-            <span>Desenvolvedor Front-End</span>
+            <span>
+              Desenvolvedor <strong>Front-End</strong>
+            </span>
           </AnimatedText>
           <Flex flexDirection="row" gap={5}>
             {buttonItems.map((buttonItem) => (

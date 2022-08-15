@@ -32,9 +32,14 @@ const AboutCard = () => {
         alt="logo"
         margin="2em"
         _hover={{ transform: "scale(0.9)" }}
+        _active={{
+          border: "2px",
+          borderColor: "orange",
+          borderRadius: "10rem",
+        }}
         onClick={() => handleClick()}
       />
-      {eggVisible && <LuminousText>Você encontrou um easter egg!</LuminousText>}
+      {eggVisible && <LuminousText>Um dia chegarei lá</LuminousText>}
       <TextH1>Sobre mim</TextH1>
     </Flex>
   );
