@@ -5,6 +5,7 @@ import AboutSection from "./components/About/AboutSection";
 import HomeSec from "./components/Home/HomeSec";
 import ProjectsSection from "./components/Projects/ProjectsSection";
 import Layout from "./components/Layout";
+import Skills from "./components/Skills/index";
 
 export default function Home() {
   return (
@@ -18,6 +19,9 @@ export default function Home() {
         </section>
         <section id="projects">
           <ProjectsSection />
+        </section>
+        <section id="skills">
+          <Skills />
         </section>
       </Layout>
     </>

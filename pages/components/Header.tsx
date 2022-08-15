@@ -74,7 +74,7 @@ const Header = () => {
             Projetos
           </ListItem>
         </Link>
-        <Link href="#habilities">
+        <Link href="#skills">
           <ListItem
             letterSpacing="3px"
             marginLeft="50px"
