@@ -6,6 +6,7 @@ import HomeSec from "./components/Home/HomeSec";
 import ProjectsSection from "./components/Projects/ProjectsSection";
 import Layout from "./components/Layout";
 import Skills from "./components/Skills/index";
+import Contact from "./components/Contact/index";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
         </section>
         <section id="skills">
           <Skills />
+        </section>
+        <section id="contact">
+          <Contact />
         </section>
       </Layout>
     </>
