@@ -74,6 +74,30 @@ const Skills = () => {
   ];
 
   const SkillsCard = ({ data }) => {
+    const RenderIcon = ({ data }) => {
+      return (
+        <>
+          <Box
+            position="absolute"
+            bottom="0px"
+            backgroundColor="#fff"
+            height="10em"
+            width="50%"
+            opacity="30%"
+            filter="blur(2em)"
+            zIndex="0"
+          />
+          <Image
+            src={data.icon}
+            alt={data.name}
+            width="100%"
+            height="100%"
+            padding="1em"
+            zIndex="2"
+          />
+        </>
+      );
+    };
     return (
       <Box
         maxW="20em"
@@ -84,14 +108,13 @@ const Skills = () => {
         marginTop="25px"
         backgroundColor="#1c0057"
       >
-        <Flex padding={10} justify="center" alignSelf="center">
-          <Image
-            src={data.icon}
-            alt={data.name}
-            width="100%"
-            height="100%"
-            padding="1em"
-          />
+        <Flex
+          padding={10}
+          justify="center"
+          alignSelf="center"
+          position="relative"
+        >
+          <RenderIcon data={data} />
         </Flex>
 
         <Box p="6">
