@@ -5,7 +5,6 @@ import styles from "../../styles/Header.module.css";
 
 const Header = () => {
   return (
-    //todo: passaar  o nav para chakra ui porque os elementos da list não ta dando espaço entre si, ai copiar só do header.module.css
     <nav className={styles.nav}>
       <Link href="/">
         <Image
