@@ -108,7 +108,9 @@ export const AnimatedText = styled.h4`
 `;
 
 export const TextH1 = styled.h1`
-  font-size: 30px;
+  font-size: 35px;
   font-family: coolvetica;
+  padding: 10px;
+  padding-left: ${(props) => (props.paddingLeftDisabled ? 0 : 3)}em;
   text-shadow: 1px 1px 2px black;
 `;
