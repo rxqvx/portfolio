@@ -57,7 +57,7 @@ const Footer = () => {
           <Button
             key={buttonItem.id}
             _hover={buttonItem.hover}
-            colorScheme={buttonItem.colorScheme}
+            colorScheme="gray"
             variant="solid"
             onClick={() => handlePress(buttonItem.link)}
           >
