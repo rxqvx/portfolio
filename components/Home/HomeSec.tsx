@@ -3,7 +3,7 @@ import { Flex, Button, Icon, Image, Box } from "@chakra-ui/react";
 import { EmailIcon } from "@chakra-ui/icons";
 import { AiFillLinkedin, AiFillFilePdf, AiFillGithub } from "react-icons/ai";
 
-import { AnimatedText } from "../../../styles/styled";
+import { AnimatedText } from "../../styles/styled";
 
 const HomeSec = () => {
   const Background = () => {

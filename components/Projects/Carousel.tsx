@@ -31,7 +31,7 @@ const ProjectsCarousel = () => {
 
   const CarouselProps = {
     breakPoints: breakPoints,
-    isRTL: true,
+    isRTL: false,
   };
   return (
     <Carousel {...CarouselProps}>

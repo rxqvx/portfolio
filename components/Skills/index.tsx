@@ -12,7 +12,7 @@ import Git from "./SkillsIcon/git.png";
 import NextIcon from "./SkillsIcon/next.png";
 import ChakraUiIcon from "./SkillsIcon/chakra-ui.png";
 import PythonIcon from "./SkillsIcon/python.png";
-import { TextH1 } from "../../../styles/styled";
+import { TextH1 } from "../../styles/styled";
 import { breakPoints } from "./Skills.constants";
 
 const Skills = () => {
@@ -132,7 +132,7 @@ const Skills = () => {
   };
   const CarouselProps = {
     breakPoints: breakPoints,
-    isRTL: true,
+    isRTL: false,
   };
   return (
     <Flex
