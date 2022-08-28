@@ -1,4 +1,5 @@
 import React from "react";
+import Router from "next/router";
 
 import styles from "../styles/Home.module.css";
 import AboutSection from "../components/About/AboutSection";
@@ -9,6 +10,16 @@ import Skills from "../components/Skills/index";
 import Contact from "../components/Contact/index";
 
 export default function Home() {
+  React.useEffect(() => {
+    Router.events.on("routeChangeComplete", () => {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    });
+  }, []);
+
   return (
     <>
       <Layout>
