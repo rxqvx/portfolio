@@ -72,7 +72,12 @@ const Skills = () => {
       progressValue: 40,
     },
   ];
-
+  const ImageProps = {
+    width: "100%",
+    height: "100%",
+    padding: "1em",
+    zIndex: "2",
+  };
   const SkillsCard = ({ data }) => {
     const RenderIcon = ({ data }) => {
       return (
@@ -87,14 +92,7 @@ const Skills = () => {
             filter="blur(2em)"
             zIndex="0"
           />
-          <Image
-            src={data.icon}
-            alt={data.name}
-            width="100%"
-            height="100%"
-            padding="1em"
-            zIndex="2"
-          />
+          <Image src={data.icon} alt={data.name} {...ImageProps} />
         </>
       );
     };
@@ -132,6 +130,10 @@ const Skills = () => {
       </Box>
     );
   };
+  const CarouselProps = {
+    breakPoints: breakPoints,
+    isRTL: true,
+  };
   return (
     <Flex
       backgroundColor="#5E5FAD"
@@ -142,7 +144,7 @@ const Skills = () => {
     >
       <TextH1>Habilidades</TextH1>
       <Flex flexWrap="wrap" justifyContent="space-between">
-        <Carousel breakPoints={breakPoints}>
+        <Carousel {...CarouselProps}>
           {skillsData.map((skill) => (
             <SkillsCard data={skill} key={skill.id} />
           ))}
