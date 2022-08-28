@@ -132,7 +132,7 @@ const Skills = () => {
   };
   const CarouselProps = {
     breakPoints: breakPoints,
-    isRTL: true,
+    isRTL: false,
   };
   return (
     <Flex
