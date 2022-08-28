@@ -10,15 +10,7 @@ import Skills from "../components/Skills/index";
 import Contact from "../components/Contact/index";
 
 export default function Home() {
-  React.useEffect(() => {
-    Router.events.on("routeChangeComplete", () => {
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-      });
-    });
-  }, []);
+
 
   return (
     <>
