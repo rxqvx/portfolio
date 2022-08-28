@@ -108,6 +108,7 @@ export const AnimatedText = styled.h4`
 `;
 
 export const TextH1 = styled.h1`
+  color: #fff;
   font-size: 35px;
   font-family: coolvetica;
   padding: 10px;

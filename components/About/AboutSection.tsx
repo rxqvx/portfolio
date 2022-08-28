@@ -1,4 +1,4 @@
-import { Flex, Image } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 
 import AboutCard from "./AboutCard";
 import { Divider } from "./styles";
@@ -31,23 +31,23 @@ const AboutSection = () => {
           border="1px solid rgba(255, 255, 255, 0.18)"
           overflow="auto"
         >
-          <p>
+          <Text color="#fff">
             Atualmente sou um estagiário em tecnologia, tenho aprendizado em
             algumas linguagens de programação como por exemplo Python, Java, C,
             HTML, CSS, Javascript e Typescript. Gosto bastante de trabalhar com
             os frameworks React e React Native além dos próprios frameworks do
             React. Procuro aprender cada vez mais, principalmente pelo fato de
             que amo trabalhar com tecnologias :D
-          </p>
-          <p>
+          </Text>
+          <Text color="#fff">
             Busco o FullStack, mas atualmente estou focado no Front-End, seja no
             Front Engineering ou Front Engineering Design.
-          </p>
-          <p>
+          </Text>
+          <Text color="#fff">
             Me considero esforçado no aprendizado e buscando resolver desafios!
             Sou bom com trabalho em equipe, mas também com trabalho individual.
             Me definindo em 3 palavras: organizado, motivado e dedicado.
-          </p>
+          </Text>
         </Flex>
       </Flex>
       <Divider />

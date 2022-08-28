@@ -72,14 +72,14 @@ export default function ProjectCard({ data }) {
   const renderBadge = (language) => {
     return (
       <Badge
+        backgroundColor="#716EB9"
         key={language}
         borderRadius="full"
         px="2"
-        colorScheme="purple"
         fontSize="sm"
         margin="5px"
       >
-        {language}
+        <Text color="#D6BCFA">{language}</Text>
       </Badge>
     );
   };
@@ -91,6 +91,7 @@ export default function ProjectCard({ data }) {
         height="38em"
         borderWidth="2px"
         borderRadius="lg"
+        borderColor="#7879BA"
         overflow="hidden"
         marginTop="25px"
         backgroundColor="#5E5FAD"
@@ -118,14 +119,21 @@ export default function ProjectCard({ data }) {
             lineHeight="tight"
             noOfLines={1}
           >
-            {data.name}
+            <Text color="#fff">{data.name}</Text>
           </Box>
 
           <Box>
-            <Box as="span" color="gray.400" fontSize="sm">
-              Criado em{" "}
-            </Box>
-            {renderDate(data.created_at)}
+            <Flex
+              as="span"
+              color="gray.400"
+              fontSize="sm"
+              justify="space-evenly"
+              align="flex-start"
+              width="150px"
+            >
+              Criado em
+              <Text color="#fff"> {renderDate(data.created_at)}</Text>
+            </Flex>
           </Box>
           <Flex flexDir="column">
             {data.html_url && renderRepoButton(data)}

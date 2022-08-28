@@ -51,7 +51,7 @@ const Footer = () => {
       backgroundColor="#100030"
       borderTop="2px"
     >
-      <Text>Made by Henrique Kenji © 2022</Text>
+      <Text color="#fff">Made with ❤️ by Henrique Kenji © 2022</Text>
       <Flex justifyContent="space-between" width="250px">
         {buttonItems.map((buttonItem) => (
           <Button

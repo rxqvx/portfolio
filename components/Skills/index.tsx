@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Box, Progress } from "@chakra-ui/react";
+import { Flex, Box, Progress, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import Carousel from "react-elastic-carousel";
 
@@ -105,6 +105,7 @@ const Skills = () => {
         overflow="hidden"
         marginTop="25px"
         backgroundColor="#1c0057"
+        borderColor="#402972"
       >
         <Flex
           padding={10}
@@ -123,7 +124,7 @@ const Skills = () => {
             lineHeight="tight"
             noOfLines={1}
           >
-            {data.name}
+            <Text color="#fff">{data.name}</Text>
           </Box>
           <Progress value={data.progressValue} />
         </Box>
