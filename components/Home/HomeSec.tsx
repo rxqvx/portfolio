@@ -32,7 +32,7 @@ const HomeSec = () => {
     {
       id: 2,
       name: "Github",
-      colorScheme: "gray",
+      colorScheme: "whiteAlpha",
       leftIcon: <Icon as={AiFillGithub} />,
       hover: { color: "#fff", backgroundColor: "#000" },
       link: "https://github.com/rxqvx",

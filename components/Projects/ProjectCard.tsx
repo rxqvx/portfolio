@@ -48,8 +48,8 @@ export default function ProjectCard({ data }) {
   const renderSiteButton = (data) => {
     return (
       <Link href={verifyUrl(data)}>
-        <ButtonStylished leftIcon={<AiFillPlayCircle />}>
-          <Text as="a" variant="header">
+        <ButtonStylished leftIcon={<AiFillPlayCircle color="#fff" />}>
+          <Text as="a" variant="header" color="#fff">
             Site
           </Text>
         </ButtonStylished>
@@ -60,8 +60,8 @@ export default function ProjectCard({ data }) {
   const renderRepoButton = (data) => {
     return (
       <Link href={data.html_url}>
-        <ButtonStylished leftIcon={<AiFillGithub />}>
-          <Text as="a" variant="header">
+        <ButtonStylished leftIcon={<AiFillGithub color="#fff" />}>
+          <Text as="a" variant="header" color="#fff">
             Repositório
           </Text>
         </ButtonStylished>
