@@ -177,7 +177,9 @@ const Contact = () => {
                   )}
                 </Field>
               ))}
-              <FormLabel marginTop="10px">Mensagem</FormLabel>
+              <FormLabel marginTop="10px" color="#fff">
+                Mensagem
+              </FormLabel>
               <Textarea
                 name="message"
                 height="200px"
