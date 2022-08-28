@@ -5,7 +5,7 @@
   font-family: sans-serif;
   scrollbar-width: thin;
   scrollbar-color: #483853 #2d0b47;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 *::-webkit-scrollbar {
   width: 15px;

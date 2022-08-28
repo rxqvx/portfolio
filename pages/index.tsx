@@ -1,4 +1,4 @@
-import { Flex } from "@chakra-ui/react";
+import React from "react";
 
 import styles from "../styles/Home.module.css";
 import AboutSection from "../components/About/AboutSection";

@@ -64,7 +64,7 @@ const HomeSec = () => {
       return;
     }
 
-    window.open(link, "_blank");
+    window.open(link, "_self");
   };
 
   return (
