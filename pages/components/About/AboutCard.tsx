@@ -40,7 +40,7 @@ const AboutCard = () => {
         onClick={() => handleClick()}
       />
       {eggVisible && <LuminousText>Um dia chegarei lá</LuminousText>}
-      <TextH1>Sobre mim</TextH1>
+      <TextH1 paddingLeftDisabled>Sobre mim</TextH1>
     </Flex>
   );
 };

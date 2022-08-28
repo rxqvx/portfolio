@@ -12,17 +12,24 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { TextH1 } from "../../../styles/styled";
+import { FormValues, FormItems } from "./interface.types";
 
 const Contact = () => {
   const form = useRef();
   const [isError, setIsError] = React.useState<boolean>();
   const [message, setMessage] = React.useState<string>("");
-  const [emailValues, setEmailValues] = React.useState({
+  const [emailValues, setEmailValues] = React.useState<FormValues>({
     name: "",
     email: "",
     subject: "",
     message: "",
   });
+  const formValues: FormValues = {
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -77,12 +84,12 @@ const Contact = () => {
     return error;
   }
 
-  const formItems = [
+  const formItems: FormItems = [
     {
       name: "name",
       placeholder: "Nome",
       type: "text",
-      validatee: validateName,
+      validate: validateName,
       emailValue: emailValues.name,
     },
     {
@@ -138,7 +145,7 @@ const Contact = () => {
           overflow="hidden"
           justifyContent="center"
         >
-          <Formik>
+          <Formik onSubmit={sendEmail} initialValues={formValues}>
             <Form onSubmit={sendEmail} ref={form}>
               {formItems.map((item) => (
                 <Field
