@@ -6,7 +6,7 @@ import styles from "../styles/Header.module.css";
 const Header = () => {
   return (
     <nav className={styles.nav}>
-      <Link href="/">
+      <Link href="/" scroll={false}>
         <Image
           // className={styles.logo}
           src="/images/icon.png"
@@ -18,7 +18,7 @@ const Header = () => {
       </Link>
       <List display="flex" gap="5px">
         {/* ul */}
-        <Link href="#home">
+        <Link href="#home" scroll={false}>
           <ListItem
             // li
             letterSpacing="3px"
@@ -37,7 +37,7 @@ const Header = () => {
             Início
           </ListItem>
         </Link>
-        <Link href="#about">
+        <Link href="#about" scroll={false}>
           <ListItem
             letterSpacing="3px"
             marginLeft="50px"
@@ -55,7 +55,7 @@ const Header = () => {
             Sobre mim
           </ListItem>
         </Link>
-        <Link href="#projects">
+        <Link href="#projects" scroll={false}>
           <ListItem
             letterSpacing="3px"
             marginLeft="50px"
@@ -73,7 +73,7 @@ const Header = () => {
             Projetos
           </ListItem>
         </Link>
-        <Link href="#skills">
+        <Link href="#skills" scroll={false}>
           <ListItem
             letterSpacing="3px"
             marginLeft="50px"
@@ -91,7 +91,7 @@ const Header = () => {
             Habilidades
           </ListItem>
         </Link>
-        <Link href="#contact">
+        <Link href="#contact" scroll={false}>
           <ListItem
             letterSpacing="3px"
             marginLeft="50px"
