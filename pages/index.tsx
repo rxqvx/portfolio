@@ -1,12 +1,12 @@
 import { Flex } from "@chakra-ui/react";
 
 import styles from "../styles/Home.module.css";
-import AboutSection from "./components/About/AboutSection";
-import HomeSec from "./components/Home/HomeSec";
-import ProjectsSection from "./components/Projects/ProjectsSection";
-import Layout from "./components/Layout";
-import Skills from "./components/Skills/index";
-import Contact from "./components/Contact/index";
+import AboutSection from "../components/About/AboutSection";
+import HomeSec from "../components/Home/HomeSec";
+import ProjectsSection from "../components/Projects/ProjectsSection";
+import Layout from "../components/Layout";
+import Skills from "../components/Skills/index";
+import Contact from "../components/Contact/index";
 
 export default function Home() {
   return (

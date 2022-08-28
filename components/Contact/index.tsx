@@ -11,7 +11,7 @@ import {
   Textarea,
   Button,
 } from "@chakra-ui/react";
-import { TextH1 } from "../../../styles/styled";
+import { TextH1 } from "../../styles/styled";
 import { FormValues, FormItems } from "./interface.types";
 
 const Contact = () => {
