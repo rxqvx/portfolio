@@ -159,7 +159,7 @@ const Contact = () => {
                       paddingTop="10px"
                       isInvalid={form.errors.name && form.touched.name}
                     >
-                      <FormLabel>{item.placeholder}</FormLabel>
+                      <FormLabel color="#fff">{item.placeholder}</FormLabel>
                       <Input
                         name={item.name}
                         value={item.emailValue}
