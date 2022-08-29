@@ -115,3 +115,10 @@ export const TextH1 = styled.h1`
   padding-left: ${(props) => (props.paddingLeftDisabled ? 0 : 3)}em;
   text-shadow: 1px 1px 2px black;
 `;
+
+export const Divider = styled.div`
+  width: 100%;
+  background-color: #b09eb4;
+  height: 2px;
+  opacity: 50%;
+`;
